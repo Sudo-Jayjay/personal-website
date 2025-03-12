@@ -71,3 +71,7 @@ ul {
 .content{
   list-style-type: circle;
 }
+
+.definition{
+  font-size: 11px;
+}
