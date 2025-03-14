@@ -75,3 +75,22 @@ ul {
 .definition{
   font-size: 11px;
 }
+
+.tools{
+  padding-top: 2rem;
+  padding-left: 2rem;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+svg{
+  float: left;
+}
+
+
+.tools > ul > li > p{
+  padding-left: 2rem;
+  padding-top: 0.1rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
