@@ -25,6 +25,7 @@ body{
 .navbar > ul > li{
   height: 100%;
   align-content: center;
+  z-index: 10;
 }
 
 .navbar > ul > li > a{
@@ -58,23 +59,70 @@ ul {
   padding: 0;
 }
 
-.body{
+.timeline-wrapper{
   grid-column: 2/3;
   grid-row: 2/3;
   color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1% 2rem;
 }
 
-.header{
-  font-weight: 900;
-  font-size: 2.5rem;
+.timeline-row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.content{
-  list-style-type: circle;
+.heading{
+  font-size: 2rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.definition{
-  font-size: 11px;
+.heading i{
+  font-size: 4rem;
+}
+
+.content-box{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  margin: 0 2rem;
+  background-color: #222831;
+  backdrop-filter: blur(20px);
+  border: 3px solid #31363F;
+  border-radius: 1rem;
+  font-size: 14px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.content-box:hover{
+  box-shadow: 0 0 25px #76ABAE;
+  border: 3px solid #76ABAE;
+}
+
+.timeline-box{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-left: 5px solid #76ABAE;
+}
+
+.content-box::before{
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #76ABAE;
+  border-radius: 50%;
+  left: -50px;
+  top: 90px;
 }
 
 .tools{
