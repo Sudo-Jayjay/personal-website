@@ -20,12 +20,12 @@ body{
   background-color: #76ABAE;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .navbar > ul > li{
   height: 100%;
   align-content: center;
-  z-index: 10;
 }
 
 .navbar > ul > li > a{
@@ -100,6 +100,11 @@ ul {
   font-size: 14px;
   transition: 0.4s ease;
   cursor: pointer;
+  z-index: 0;
+}
+
+.content-box > ul{
+  list-style-type: square;
 }
 
 .content-box:hover{
@@ -135,7 +140,6 @@ ul {
 svg{
   float: left;
 }
-
 
 .tools > ul > li > p{
   padding-left: 2rem;
